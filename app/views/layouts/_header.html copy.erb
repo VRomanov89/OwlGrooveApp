@@ -1,0 +1,43 @@
+<div id="navbar-main">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-users" style="font-size:30px; color:#FFffff;"></span>
+        </button>
+        <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-users" style="font-size:18px; color:#FFDB4D;"></span></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#home" class="smoothScroll">Owl Groove</a></li>
+          <li> <a href="#services" class="smoothScroll"> Services</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+<script>
+(function ($) {
+  $(document).ready(function(){
+    
+  // hide .navbar first
+  $(".navbar").hide();
+  
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+      if ($(this).scrollTop() > 200) {
+        $('.navbar').fadeIn();
+      } else {
+        $('.navbar').fadeOut();
+      }
+    });
+
+  
+  });
+
+});
+  }(jQuery));
+  </script>
