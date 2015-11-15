@@ -6,13 +6,206 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-users" style="font-size:30px; color:#FFffff;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-users" style="font-size:18px; color:#FFDB4D;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="smoothScroll">Owl Groove</a></li>
+      <!-- <li> <a href="#about" class="smoothScroll"> About</a></li> -->
+      <li> <a href="#services" class="smoothScroll"> Services</a></li>
+      <!-- <li> <a href="#team" class="smoothScroll"> Team</a></li> -->
+      <!-- <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li> -->
+      <!-- <li> <a href="#blog" class="smoothScroll"> Blog</a></li> -->
+      <!-- <li> <a href="#contact" class="smoothScroll"> Contact</a></li> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
 
-<%= render 'layouts/header' %>
+  
+  
+    <!-- ==== HEADERWRAP ==== -->
+      <div id="headerwrap" id="home" name="home">
+      <header class="clearfix">
+            <h1><!--<span class="icon icon-users"></span>--> Welcome to OwlGroove</h1>
+            <p>VIP Partying has Never Been Easier!</p>
+            
+            
+         <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
 
-<div class="containe">
-  <%= yield %>
-  <%= render 'layouts/footer' %>
+            <form action="//owlgroove.us11.list-manage.com/subscribe/post?u=6f93c465acc22a9e868f06482&amp;id=ee0f3d9838" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup">
+                <div id="mc_embed_signup_scroll">
+                  <div class="form-group">
+                    <input align="center" type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your Email *">
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none">
+                    </div>
+                    <div class="response" id="mce-success-response" style="display:none">
+                    </div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              </div>
+                </div>
+                          <div id="success">
+                          </div>
+                    <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_6f93c465acc22a9e868f06482_ee0f3d9838" tabindex="-1" value="">
+                </div>
+                  <div class="clear">
+                  <input type="submit" value="Join the Revolution!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xl">
+                </div>
+              </form>
+              
+              
+          </div>
+          <div class="col-sm-offset-3 col-sm-6 headertext">
+            Owlgroove provides a simple and transparent process that will upgrade your night.
+          </div>
+      </div>
+            
+            
+            
+        </header>     
+      </div><!-- /headerwrap -->
 
-</body>
+    <!-- ==== GREYWRAP ==== -->
+    <div id="greywrap">
+      <div class="row">
+        <div class="col-lg-4 callout">
+          <span class="icon icon-fire"></span>
+          <h2>Book in Seconds!</h2>
+          <p>Our goal is to make the experience as seamless as possible. We are giving our users the ability to book a venue at the push of a button.</p>
+        </div><!-- col-lg-4 -->
+          
+        <div class="col-lg-4 callout">
+          <span class="icon icon-briefcase"></span>
+          <h2>Easy Payments & Split-the-Bill</h2>
+          <p>Pay through our app and split the bill with your friends! You shouldn't have to carry all that cash and chase your friends for their payments. </p>
+        </div><!-- col-lg-4 --> 
+        
+        <div class="col-lg-4 callout">
+          <span class="icon icon-cool"></span>
+          <h2>Rewards</h2>
+          <p>Our goal is to keep our customers happy. As a result, you will be able to enjoy awesome rewards for using our system over and over.</p>
+        </div><!-- col-lg-4 --> 
+      </div><!-- row -->
+    </div><!-- greywrap -->
+    
+    <!-- ==== SECTION DIVIDER1 -->
+    
+    <section class="parallax-window section-divider textdivider" data-parallax="scroll" data-image-src="assets/img/bg/divider1.jpg" id="services">
+      <div class="container">
+        <div class="row test">
+          <div class="col-sm-12">
+            <h1>3 Easy Steps for an Unforgettable VIP Night</h1>
+            <hr>
+          </div>
+            <div class="col-sm-6">
+            <p>1. Browse through the variety of venues and events that we offer in your city.</p>
+            <p>2. Choose your date, table location, and liquor. Questions along the way? No problem! Contact your OwlGroove private concierge for help at any point.</p>
+            <p>3. Before you even arrive at the venue, split the bill with friends. No more 3am scramble for cash</p>
+            </div>
+            <div class="col-sm-6">
+              <img style="max-width:100%; vertical-align:middle" src="assets/img/site_img/part-club4.png" />
+            </div>
+        </div>
+      </div><!-- container -->
+    </section><!-- section -->  
+    
+    <!-- ==== SERVICES ==== -->
+    <div class="container"  name="services">
+      <br>
+      <br>
+      <div class="row">
+        <h1 class="centered">Earn Rewards</h1>
+        <hr>
+        <div class="col-sm-6">
+          <img style="max-width:100%; vertical-align:middle" src="assets/img/site_img/party-club3.png" />
+        </div>
+        <div class="col-sm-6 centered" style="font-weight:900;font-size:24">
+          <h2>Every time you book through OwlGroove you earn points.</h2>
+          <h3>Redeem your points and make your night unforgettable with black car service , a private chef or a helicopter tour around the city and much more .</h3>
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+      
+
+    <!-- ==== SECTION DIVIDER2 -->
+    <section class="parallax-window section-divider textdivider" data-parallax="scroll" data-image-src="assets/img/bg/divider0.jpg" id="services">
+      <div class="container">
+        <div class="row test">
+          <div class="col-sm-12">
+            <h1>Invite friends and earn cash</h1>
+            <hr>
+          </div>
+            <div class="col-sm-6 centered">
+            <p>For every friend you invite to signup you’ll both get 20$ as soon as he books a table with Owlgroove.</p>
+            <p>Sounds too good to be true ? Signup today and be invited to our members only open bar launch party this summer</p>
+            </div>
+            <div class="col-sm-6">
+              <img style="max-width:100%; vertical-align:middle" src="assets/img/site_img/party-club5.jpg" />
+            </div>
+        </div>
+      </div><!-- container -->
+    </section><!-- section -->
+    
+    </div><!-- container -->
+
+    <div id="footerwrap">
+      <div class="container">
+        <h4>Created by <a href="http://owlgroove.com">OwlGroove.com</a> - Copyright 2015</h4>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/retina.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  <script type="text/javascript" src="assets/js/parallax.js"></script>
+    <%= yield %>
+  </body>
 </html>
+
+<script>
+(function ($) {
+  $(document).ready(function(){
+    
+  // hide .navbar first
+  $(".navbar").hide();
+  
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+      if ($(this).scrollTop() > 200) {
+        $('.navbar').fadeIn();
+      } else {
+        $('.navbar').fadeOut();
+      }
+    });
+
+  
+  });
+
+});
+  }(jQuery));
+  </script>
