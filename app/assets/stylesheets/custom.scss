@@ -275,14 +275,29 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(http://vladromanov.com/Files/OwlGroove/img/header_bg.jpg) no-repeat;
+    background-size: cover; 
+}
+
 #headerwrap {
-  background: url(http://vladromanov.com/Files/OwlGroove/img/header_bg.jpg) no-repeat center top;
+  /* background: url(http://vladromanov.com/Files/OwlGroove/img/header_bg.jpg) no-repeat center top; */
   margin-top: -50px;
   padding-top:120px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 1000px;
+  min-height: 800px;
   width: 100%;
   
     -webkit-background-size: 100%;
@@ -297,6 +312,7 @@ a:after {
 }
 
 #headerwrap h1 {
+
   color:#FFffff;
   margin-top: 40px;
   padding-bottom: 30px;

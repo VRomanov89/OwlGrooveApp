@@ -1,14 +1,16 @@
 <!-- ==== HEADERWRAP ==== -->
+    
+
       <div id="headerwrap" id="home" name="home">
-      <header class="clearfix">
+        <video autoplay loop poster="http://vladromanov.com/Files/OwlGroove/img/header_bg.jpg" id="bgvid">
+    <source src="http://vladromanov.com/Files/OwlGroove/video/owlgroove.mp4" type="video/mp4">
+</video>
+      <header class="clearfix test">
             <h1><!--<span class="icon icon-users"></span>--> Welcome to OwlGroove</h1>
             <p>VIP Partying has Never Been Easier!</p>
             
-            <video autoplay loop poster="http://vladromanov.com/Files/OwlGroove/img/header_bg.jpg" id="bgvid">
-              <source src="<%= asset_path('/video/owlgroove.mp4') %>" type="video/mp4">
-            </video>
             
-        <div class="row">
+         <div class="row">
           <div class="col-sm-4 col-sm-offset-4">
 
             <form action="//owlgroove.us11.list-manage.com/subscribe/post?u=6f93c465acc22a9e868f06482&amp;id=ee0f3d9838" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -40,7 +42,7 @@
           <div class="col-sm-offset-3 col-sm-6 headertext">
             Owlgroove provides a simple and transparent process that will upgrade your night.
           </div>
-        </div>
+      </div>
             
             
             
@@ -71,3 +73,13 @@
     </div><!-- greywrap -->
     
     </div><!-- container -->
+
+<script type="text/javascript">
+$( document ).ready(function() {
+$(function() {
+    var BV = new $.BigVideo();
+    BV.init();
+    BV.show('https://vimeo.com/102219972');
+});
+});
+</script>
